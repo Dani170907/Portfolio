@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio Dani Ramadhan - Coder | Rider | Mountainer" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="icon" href="src/img/favicon.png" type="image/png" />
+    <title>Portfolio</title>
 </head>
 
 <!-- Header Start -->
@@ -178,32 +179,23 @@
 
             <div class="flex flex-wrap justify-center w-full px-5 xl:w-11/12 xl:mx-auto">
                 <div class="p-4 mb-12 md:w-1/2">
-                    <div class="overflow-hidden rounded-md shadow-md">
-                        <img src="dist/img/portfolio/Election/dashboard.png" alt="pertama" width="w-full">
+                    <div class="relative overflow-hidden rounded-md shadow-md">
+                        <div class="swiper portfolio-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="dist/img/portfolio/Election/registrasi.png" alt="Tampilan Dashboard" class="object-cover w-full">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="dist/img/portfolio/Election/vote1.png" alt="Tampilan Halaman Voting" class="object-cover w-full">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="dist/img/portfolio/Election/vote2.png" alt="Tampilan Hasil Akhir" class="object-cover w-full">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Election (Sistem Pemilihan Ketua Osis)</h3>
-                    <p class="text-base font-medium text-secondary">Membuat landing page yang menarik dan berkinerja tinggi untuk kampanye pemasaran produk, dengan fokus pada konversi dan pengalaman pengguna.</p>
-                </div>
-                <div class="p-4 mb-12 md:w-1/2">
-                    <div class="overflow-hidden rounded-md shadow-md">
-                        <img src="dist/img/portfolio/2.png" alt="pertama" width="w-full">
-                    </div>
-                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Lorem, ipsum dolor.</h3>
-                    <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nemo facere asperiores?</p>
-                </div>
-                <div class="p-4 mb-12 md:w-1/2">
-                    <div class="overflow-hidden rounded-md shadow-md">
-                        <img src="dist/img/portfolio/3.png" alt="pertama" width="w-full">
-                    </div>
-                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Lorem ipsum dolor sit.</h3>
-                    <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium aliquid sit ea ratione voluptas laboriosam nesciunt repellat sed quaerat!</p>
-                </div>
-                <div class="p-4 mb-12 md:w-1/2">
-                    <div class="overflow-hidden rounded-md shadow-md">
-                        <img src="dist/img/portfolio/4.png" alt="pertama" width="w-full">
-                    </div>
-                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis numquam recusandae voluptate at?</p>
+                    <p class="text-base font-medium text-secondary">Membuat sistem pemilihan ketua OSIS berbasis web untuk memudahkan proses voting secara transparan dan efisien di lingkungan sekolah.</p>
                 </div>
             </div>
         </div>
@@ -445,6 +437,7 @@
      </footer>
     <!-- Footer End -->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="dist/js/script.js"></script>
 </body>
 
