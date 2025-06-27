@@ -19,27 +19,26 @@ hamburger.addEventListener('click', function() {
    navMenu.classList.toggle('hidden');
 })
 
-// Inisialisasi Swiper untuk semua slider portfolio dengan CARD EFFECT
+// Inisialisasi Swiper untuk semua slider portfolio dengan AUTOPLAY
 document.addEventListener('DOMContentLoaded', function () {
   const portfolioSliders = document.querySelectorAll('.portfolio-slider');
 
   portfolioSliders.forEach(slider => {
     new Swiper(slider, {
-      // Mengaktifkan card effect
-      effect: 'cards',
+      loop: true,
 
-      // Membuat kursor menjadi ikon tangan saat di-hover
-      grabCursor: true,
-
-      // Mengaktifkan navigasi dengan keyboard (opsional, tapi bagus)
-      keyboard: {
-        enabled: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
 
-      // Opsi spesifik untuk card effect (bisa dikustomisasi)
-      cardsEffect: {
-        slideShadows: true, // Memberi efek bayangan pada kartu
-        rotate: true,       // Kartu akan sedikit berputar saat digeser
+      pagination: {
+        el: slider.parentElement.querySelector('.swiper-pagination'),
+        clickable: true,
+      },
+
+      keyboard: {
+        enabled: true,
       },
     });
   });
