@@ -24,6 +24,15 @@ hamburger.addEventListener('click', function() {
    navMenu.classList.toggle('hidden');
 })
 
+
+// Klik di luar hamburger
+window.addEventListener('click', function (e) {
+  if (e.target != hamburger && e.target != navMenu) {
+    hamburger.classList.remove('hamburger-active');
+    navMenu.classList.add('hidden');
+  }
+});
+
 // Inisialisasi Swiper untuk semua slider (Portfolio & Activity) dengan ZOOM
 document.addEventListener('DOMContentLoaded', function () {
   // Pilih semua slider dari kedua section
