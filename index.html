@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="icon" href="src/img/favicon.png" type="image/png" />
     <title>Portfolio</title>
+    <script>
+        document.documentElement.classList.toggle(
+        'dark',
+        localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        )
+    </script>
 </head>
 
 
